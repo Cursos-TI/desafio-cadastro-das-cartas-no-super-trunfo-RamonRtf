@@ -2,7 +2,7 @@
 #include <locale.h>
 
 int main() {
-    setlocale(LC_ALL, "portuguese_Brazil");
+   setlocale(LC_ALL, "portuguese_Brazil");
     //dados carta 1
     char estado [2];
     char codigo [3];
@@ -22,6 +22,10 @@ int main() {
 
     //receber dados carta 1
     printf("Dados da carta 1:\n");
+    sleep(2);
+    printf("Use apenas vírgulas como separador decimal.\n");
+    sleep(2);
+    system("cls");
     printf("Digite a letra que representa o estado: A-B\n");
     scanf("%s", estado);
 
@@ -44,7 +48,11 @@ int main() {
     scanf("%d", &pontos_turisticos);
 
     //receber dados carta 2
-    printf("Dados carta:2\n");
+    printf("Dados da carta 2:\n");
+    sleep(2);
+    printf("Use apenas vírgulas como separador decimal.\n");
+    sleep(2);
+    system("cls");
 
     printf("Digite a letra que representa o estado: A-B\n");
     scanf("%s", estado2);
