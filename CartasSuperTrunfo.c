@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <locale.h>
 
-int main() {
-   setlocale(LC_ALL, "portuguese_Brazil");
+int main (){
+    setlocale(LC_ALL, "portuguese_Brazil");
     //dados carta 1
     char estado [2];
     char codigo [3];
@@ -26,7 +27,7 @@ int main() {
     printf("Use apenas vírgulas como separador decimal.\n");
     sleep(2);
     system("cls");
-    printf("Digite a letra que representa o estado: A-B\n");
+    printf("Digite a letra que representa o estado: A-Z\n");
     scanf("%s", estado);
 
     printf("Digite o código do Estado. ex: A01\n");
@@ -54,7 +55,7 @@ int main() {
     sleep(2);
     system("cls");
 
-    printf("Digite a letra que representa o estado: A-B\n");
+    printf("Digite a letra que representa o estado: A-Z\n");
     scanf("%s", estado2);
 
     printf("Digite o código do Estado. ex: A01\n");
@@ -89,7 +90,17 @@ int main() {
     printf("\n");
     printf(" Letra: %s\n codigo: %s\n Nome: %s\n habitantes: %2.f\n Área:%.2f\n PIB: %.2f\n Pontos turísticos: %d\n ", estado2, codigo2, nome_cidade2, habitantes2, area2, pib2, pontos_turisticos2);
 
+    int calculo_pib(){
+
+
+
     system("pause");
+
+
+
+
+
+
 
     return 0;
 }
