@@ -12,7 +12,7 @@ int main (){
     float habitantes;
     float area;
     float pib;
-    float pontos_turisticos;
+    int pontos_turisticos;
     //dado carta 2
     char estado2 [5];
     char codigo2 [3];
@@ -20,7 +20,7 @@ int main (){
     float habitantes2;
     float area2;
     float pib2;
-    float pontos_turisticos2;
+    int pontos_turisticos2;
 
     //receber dados carta 1
     printf("Dados da carta 1:\n");
@@ -47,7 +47,7 @@ int main (){
     scanf("%f", &pib);
 
     printf("Digite a quantidade de pontos turísticos:\n");
-    scanf("%f", &pontos_turisticos);
+    scanf("%d", &pontos_turisticos);
 
     //receber dados carta 2
     printf("Dados da carta 2:\n");
@@ -75,7 +75,7 @@ int main (){
     scanf("%f", &pib2);
 
     printf("Digite a quantidade de pontos turísticos:\n");
-    scanf("%f", &pontos_turisticos2);
+    scanf("%d", &pontos_turisticos2);
 
     //mostrar as cartas
 
@@ -83,13 +83,13 @@ int main (){
 
     printf("\n");
 
-    printf(" Letra: %s\n codigo: %s\n Nome: %s\n habitantes: %2.f\n Área:%.2f\n PIB: %.2f\n Pontos turísticos: %.2f\n ", estado, codigo, nome_cidade, habitantes, area, pib, pontos_turisticos);
+    printf(" Letra: %s\n codigo: %s\n Nome: %s\n habitantes: %2.f\n Área:%.2f\n PIB: %.2f\n Pontos turísticos: %d\n ", estado, codigo, nome_cidade, habitantes, area, pib, pontos_turisticos);
 
     printf("\n");
 
     printf("Atributos carta 2:\n");
     printf("\n");
-    printf(" Letra: %s\n codigo: %s\n Nome: %s\n habitantes: %2.f\n Área:%.2f\n PIB: %.2f\n Pontos turísticos: %.2f\n ", estado2, codigo2, nome_cidade2, habitantes2, area2, pib2, pontos_turisticos2);
+    printf(" Letra: %s\n codigo: %s\n Nome: %s\n habitantes: %2.f\n Área:%.2f\n PIB: %.2f\n Pontos turísticos: %d\n ", estado2, codigo2, nome_cidade2, habitantes2, area2, pib2, pontos_turisticos2);
 
 
     system("pause");
